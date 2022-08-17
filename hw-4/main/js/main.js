@@ -1,44 +1,48 @@
 // - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом всередині
 
-for (let i = 0; i<10; i++) {
+for (let i = 0; i < 10; i++) {
     document.write(`<div>Mabel</div>`);
 }
+document.write('************')
 
 // - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом і індексом всередині
 
-for (let i = 0; i<10; i++) {
-    document.write(`<div>Dipper ${i} </div>`);
+for (let i = 0; i < 10; i++) {
+    document.write(`<div>Dipper ${i}</div>`);
 }
+document.write('************')
 
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
 
 let i = 0;
-while (i<20) {
-    document.write(`<h1>Stan Pines</h1>`);
+while (i < 20) {
+    document.write(`<h1>Soos</h1>`);
     i++;
 }
+document.write('************')
 
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
 
 let ind = 0;
-while (ind<20) {
-    document.write(`<h1>Stanford Pines ${ind} </h1>`);
+while (ind < 20) {
+    document.write(`<h1>Wedy ${ind}</h1>`);
     ind++;
 }
+document.write('************')
 
 // - Використовуючи данні з масиву, за допомоги document.write та циклу
 // побудувати структуру по шаблону
 
 let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
-document.write(`<ul>`);
-for (const listOfItem of listOfItems) {
-    document.write(`<li>${listOfItem}</li>`);
+for (let listOfItem of listOfItems) {
+    document.write(`<ul>`)
+document.write(`<li>${listOfItem}</li>`)
+document.write(`</ul>`)
 }
-document.write(`</ul>`);
+document.write('************')
 
 //     Використовуючи данні з масиву, за допомоги document.write та циклу
 // побудувати структуру по шаблону  Зробити адекватну стилізацію
-// Великими літерами прописанні властивості об'єкту які потрібно впровадити в шаблон
 
 let products = [
     {
@@ -64,12 +68,12 @@ let products = [
 ];
 
 for (const product of products) {
-    document.write(`
-<div class="product-card">
-<h3 class="product-title">${product.title}. Prise - ${product.price}</h3>
-<img src="${product.image}" alt="Image" class="product-image">
+    document.write(`<div class="product-card">
+<h3 class="product-title">${product.title}. Prise - ${product.price} </h3>
+<img src="${product.image}" alt="image" class="product-image">
 </div>`);
 }
+document.write('************')
 
 //     є масив
 // за допомоги циклу вивести:
@@ -90,20 +94,23 @@ let users = [
     {name: 'olya', age: 31, status: false},
     {name: 'max', age: 31, status: true}
 ];
-// for (const user of users) {
-//     if (user.status) {
-//         console.log(user);
-//     }
-// }
-
-// for (const user of users) {
-//     if (!user.status) {
-//         console.log(user);
-//     }
-// }
-
-for (const user of users) {
-    if (user.age > 30) {
+for (let i = 0; i < users.length; i++) {
+    let user = users[i];
+    if (user.status) {
         console.log(user);
     }
+}
+console.log('********************************')
+for (const user of users) {
+    if (!user.status) {
+        console.log(user);
+    }
+}
+console.log('********************************')
+let main = 0;
+while (main < users.length) {
+    if (users[main].age > 30) {
+        console.log(users[main]);
+    }
+    main++;
 }
