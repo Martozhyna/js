@@ -62,7 +62,6 @@ for (const coursesInfo of coursesAndDurationArray) {
     div.appendChild(p);
 }
 
-// - Створити довільний елемент з id = text.  Використовуючи JavaScript, зробіть так, щоб при натисканні на кнопку зникав елемент з id="text".
 
 
 

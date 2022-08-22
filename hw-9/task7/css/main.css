@@ -3,7 +3,7 @@ body {
     background: lightblue;
 }
 
-.text {
+p#text {
     margin: 20% 0 0 30%;
     font-size: 50px;
 }
