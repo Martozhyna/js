@@ -2,7 +2,7 @@
 let button = document.querySelector('.click');
 let p = document.getElementById('text');
 console.log(p);
-button.onclick = function (e) {
+button.onclick = function () {
     document.body.removeChild(p);
     document.body.removeChild(button);
 }
