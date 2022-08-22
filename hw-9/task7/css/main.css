@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    background: lightblue;
+}
+
+.text {
+    margin: 20% 0 0 30%;
+    font-size: 50px;
+}
+.click {
+    font-size: 40px;
+    margin-left: 43%;
+}

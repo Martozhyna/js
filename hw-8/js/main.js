@@ -28,7 +28,7 @@ console.log(filter);
 
 // - Взяти масив з  User[] з попереднього завдання, та відсортувати його по id. по зростанню (sort)
 
-let sort = users.sort((id1, id2) => id1 - id2);
+let sort = users.sort((id1, id2) => id2.id - id1.id);
 console.log(sort);
 
 // - створити класс для об'єктів Client з полями id, name, surname , email, phone, order (поле є масивом зі списком товарів)

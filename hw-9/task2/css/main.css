@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    background: #5CDB95;
+    color: #EDF5E1;
+}
+
+.divC {
+    text-align: center;
+    font-size: 50px;
+}
+
+.divD {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 40px;
+}
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40%;
+    width: 20%;
+    font-size: 30px;
+    border: 2px solid #05386B;
+}
